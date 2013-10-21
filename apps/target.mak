@@ -1,4 +1,4 @@
-SUBDIRS := hello_world
+SUBDIRS := hello_world myfirstapp
 
 SELF_DIR := $(dir $(lastword $(MAKEFILE_LIST)))
 include $(abspath $(addprefix $(SELF_DIR),$(addsuffix /target.mak,$(SUBDIRS))))
